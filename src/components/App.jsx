@@ -12,7 +12,7 @@ export class App extends Component {
     bad: 0
   }
 
-  updateCount = e => {
+  updateCount = (e) => {
 if(e === 'Good'){
   this.setState({ good: this.state.good + 1 });
 }else if(e === 'Neutral'){
@@ -24,10 +24,13 @@ if(e === 'Good'){
 countTotalFeedback = () => {
   let total = this.state.good + this.state.neutral + this.state.bad
   return total 
-}
+  }
 
 countPositiveFeedbackPercentage = () => {
-  let positiveFeedback = ((this.state.good / countTotalFeedback()) * 100)
+  if (this.countTotalFeedback () === 0) {
+    return 0;
+  }
+return  Math.round((this.state.good / this.countTotalFeedback()) * 100)
 }
 
 render(){
