@@ -1,0 +1,17 @@
+.button{
+    text-transform: capitalize;
+    color: var(--accent-color);
+    background-color: var(--white-color);
+    border: 1px solid;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    padding: 8px 22px;
+    font-size: 12px;
+    line-height: 1.33333;
+    cursor: pointer;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out;
+}
+.button:hover{
+    background-color: beige;
+}

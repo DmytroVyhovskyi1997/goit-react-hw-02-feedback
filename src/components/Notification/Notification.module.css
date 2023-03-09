@@ -1,0 +1,5 @@
+.message{
+    color: brown;
+    display: flex;
+    justify-content: space-around;
+}
