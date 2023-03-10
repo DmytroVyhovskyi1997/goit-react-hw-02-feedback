@@ -1,5 +1,5 @@
-.message{
-    color: brown;
-    display: flex;
-    justify-content: space-around;
+.message {
+  color: brown;
+  display: flex;
+  justify-content: space-around;
 }

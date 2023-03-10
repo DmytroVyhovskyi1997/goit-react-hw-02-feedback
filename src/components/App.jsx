@@ -11,11 +11,8 @@ export class App extends Component {
     bad: 0,
   };
 
- staticState = state => {
+  staticState = state => {
     this.setState(prevState => ({ [state]: prevState[state] + 1 }));
-  
-  
-    
   };
 
   countTotalFeedback = () => {
@@ -40,8 +37,7 @@ export class App extends Component {
           />{' '}
         </Section>
         {this.countTotalFeedback() ? (
-        <Section title="Statistics">
-          
+          <Section title="Statistics">
             <Statistics
               good={good}
               neutral={neutral}
@@ -49,11 +45,10 @@ export class App extends Component {
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
-            </Section>
-          ) : (
-            <Notification message="There is no feedback"/>
-          )}
-        
+          </Section>
+        ) : (
+          <Notification message="There is no feedback" />
+        )}
       </>
     );
   }

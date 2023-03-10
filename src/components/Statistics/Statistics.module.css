@@ -1,9 +1,8 @@
-.text{
-    list-style: none;
-    font-size: 24px;
-    font-weight: bold;
-    
+.text {
+  list-style: none;
+  font-size: 24px;
+  font-weight: bold;
 }
-.list{
-    padding: 0;
+.list {
+  padding: 0;
 }
